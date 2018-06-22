@@ -1,0 +1,222 @@
+.encabezado {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  text-align: center;
+}
+.bg-custom-a {
+  background-color: darkseagreen;
+}
+.bg-custom-b {
+  background-color: lightgoldenrodyellow;
+}
+nav a{
+  color: black;
+}
+.vertical-nav-default{
+  max-width: fit-content;
+}
+.etiqueta {
+
+}
+label, label.col-form-label{
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+input[class*="form-"], select{
+  font-size: 10px !important;
+}
+#elementsList tr:hover:not(.style), #elementsList tr:hover:not(button){
+  background-color: darkgrey;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+/* MENU 2 */
+div.encabezado{
+  background-color: beige;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+div.encabezado div img.logo {
+  max-width: 100%;
+  max-height: 2.5cm;
+}
+.reorder {
+
+}
+.show {
+}
+/***************************************Primero mobiles**************************/
+/* Tamaño Celular */
+[class*="col-"] { /*cualquier clase cuyo nombre empiece por 'col-'*/
+  width: 100%;
+}
+
+div.navegacion {
+  position: static;
+  float: left;
+  background-color: beige;
+}
+div.menu {
+  position: relative;;
+}
+div.menu a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  padding: 8px;
+  text-align: center;
+  display: block;
+}
+div.menu a.active {
+  background-color: cadetblue;
+  color: white;
+}
+div.menu a:hover {
+  background-color: darkseagreen;
+}
+div.sub-menu a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+div.sub-menu a:hover {
+  background-color: darkseagreen;
+  color: white;
+}
+div.sub-elemento {
+  display: none;
+  position: relative;
+  background-color: beige;
+  width: 100%;
+  z-index: 1;
+  top: 50%;
+}
+div.sub-elemento.show{
+  display: block;
+}
+[class*="content-"]{
+  position: static;
+  float: right;
+}
+div.side {
+  display: none;
+  border: 2px solid;
+  float: right;
+}
+div.footer {
+  border: 2px solid;
+  float: left;
+}
+#opciones {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  /* Tamaño Tableta: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  div.navegacion.col-m-1{
+      width: 2cm;
+  }
+  div.footer.col-m-11{
+      width: 75%;
+      float: left;
+  }
+  div.navegacion {
+      height: 1000px;
+  }
+  div.sub-elemento {
+      display: none;
+      position: absolute;
+      background-color: beige;
+      min-width: 160px;
+      z-index: 1;
+      left: 100%;
+  }
+  div.sub-elemento.show{
+      display: block;
+  }
+  .reorder a span{
+      display: none;
+  }
+  div.side {
+      display: block;
+  }
+  div.footer {
+      float: right;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* Tamaño Normal: */
+  /*menu vertical*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  div.navegacion.col-3{
+      width: 5cm;
+  }
+  .reorder a span{
+      display: initial;
+  }
+  .c a span{
+      display: none;
+  }
+  div.show div.sub-elemento {
+      display: block;
+  }
+  div.footer {
+      border: 2px solid;
+      float: right;
+  }
+  div.side {
+      position: static;
+      border: 2px solid;
+  }
+  #opciones {
+      display: inherit;
+  }
+  /*menu horizontal*/
+  div.navegacion.h {
+
+  }
+}
+
+
+/***********************************Primero mobiles**************************/
+/* Tamaño Celular */
+
+/* Tamaño Tableta: */
+@media only screen and (min-width: 600px) {
+
+}
+/* Tamaño Normal: */
+@media only screen and (min-width: 800px) {
+  /*menu horizontal*/
+
+  /*menu vertical*/
+
+}

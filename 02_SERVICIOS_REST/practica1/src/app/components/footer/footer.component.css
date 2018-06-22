@@ -1,0 +1,11 @@
+footer {
+  border: 2px solid;
+  float: left;
+}
+
+@media only screen and (min-width: 600px) {
+  div.footer.col-m-11{
+    width: 75%;
+    float: left;
+  }
+}

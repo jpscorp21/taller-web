@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Paises</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let pais of _paises.paises$ | async">
+      <ion-avatar item-start>
+        <img [src]="pais.flag">
+      </ion-avatar>
+      <ion-label>{{pais.name}}</ion-label>
+      <ion-note item-end>{{pais.capital}}</ion-note>
+    </button>
+  </ion-list>
+
+</ion-content>

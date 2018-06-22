@@ -1,0 +1,105 @@
+<!-- Encabezado que se ve estando en cualquier modo -->
+
+<div id="encabezado" class="encabezado row no-gutters">
+  <div id="encabezadoImg" class="col-sm-2">
+      <img id="logo" class="img-fluid" style="max-height: 3cm;" title="Logo" src="assets/img/dpIcon.png" alt="logo">
+  </div>
+  <div id="encabezadoTitle" class="col-sm-10">
+      <h1>Titulo del trabajo</h1>
+      <div id="encabezadoDesc" class="text-center">Slogan...</div>
+  </div>
+</div>
+<!-- primer grupo (horizontal) -->
+<div id="horizontal-group" class="d-md-none d-lg-flex flex-column">
+  <nav id="horizontal-nav" class="navbar navbar-expand-sm navbar-light bg-custom-a">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#"><span class="fa fa-institution"> </span><span class="etiqueta"> Inicio</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fa fa-building"> </span><span class="etiqueta"> Facultades</span></a>
+              </li>
+              <li class="nav-item dropdown"><!--Dropdown con listas UL-->
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-universal-access"> </span><span class="etiqueta"> Navegar</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                      <li><a class="dropdown-item" href="abstractpage.html">Ejemplo de sitio sin bootstrap</a></li>
+                      <li><a class="dropdown-item" href="bootstrap4page.html">Ejemplo de sitio con bootstrap4</a></li>
+                      <li><a class="dropdown-item" href="#">Principal</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown"><!--Dropdown con listas UL-->
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-balance-scale"> </span><span class="etiqueta"> Facultad X</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                      <li><a class="dropdown-item" href="#">Materias x</a></li>
+                      <li><a class="dropdown-item" href="#">Matriculas x</a></li>
+                      <li><a class="dropdown-item" href="#">Cursos x</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown"><!--Dropdown con DIVs-->
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-tree"> </span><span class="etiqueta"> Facultad Y</span></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown3">
+                      <a class="dropdown-item" href="#">Materias y</a>
+                      <a class="dropdown-item" href="#">Matriculas y</a>
+                      <a class="dropdown-item" href="#">Cursos y</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="registros.html"><span class="fa fa-pencil-square-o"> </span><span class="etiqueta"> Registros</span></a>
+              </li>
+          </ul>
+          <div class="navbar-nav flex-row ml-auto d-none d-md-block"><!--Navbar con DIVs solamente (sin UL) y ordenado a la derecha-->
+              <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gears"> </span><span class="etiqueta"> Configuraciones</span></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown4">
+                      <a id="configMenu-V" class="dropdown-item" href="#"><span id="menuOpt-V">Vertical</span></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+</div>
+<!-- segundo grupo (vertical) -->
+<div id="vertical-group" class="row">
+  <nav id="vertical-nav" class="vertical-nav-default col-md-3 d-none d-md-block d-lg-none bg-custom-b p-0">
+      <a class="nav-link" href="#"><span class="fa fa-institution"> </span><span class="d-md-none"> Inicio</span></a>
+      <div class="nav-item dropright">
+          <a class=" nav-link dropdown-toggle" href="#" id="dropright1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-universal-access"> </span><span class="etiqueta d-md-none"> Navegar-v</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropright1">
+              <a class="dropdown-item" href="abstractpage.html">Ejemplo de sitio sin bootstrap-v</a>
+              <a class="dropdown-item" href="bootstrap4page.html">Ejemplo de sitio con bootstrap4-v</a>
+              <a class="dropdown-item" href="#">Principal-v</a>
+          </div>
+      </div>
+      <div class="nav-item dropright">
+          <a class=" nav-link dropdown-toggle" href="#" id="dropright2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-times-rectangle"> </span><span class="etiqueta d-md-none"> Facultad X-v</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropright2">
+              <a class="dropdown-item" href="#">Materias x-v</a>
+              <a class="dropdown-item" href="#">Matriculas x-v</a>
+              <a class="dropdown-item" href="#">Cursos x-v</a>
+          </div>
+      </div>
+      <div class="nav-item dropright">
+          <a class=" nav-link dropdown-toggle" href="#" id="dropright3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-angellist"> </span><span class="etiqueta d-md-none"> Facultad Y-v</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropright3">
+              <a class="dropdown-item" href="#">Materias y-v</a>
+              <a class="dropdown-item" href="#">Matriculas y-v</a>
+              <a class="dropdown-item" href="#">Cursos y-v</a>
+          </div>
+      </div>
+      <div class="nav-item">
+          <a class="nav-link" href="registros.html"><span class="fa fa-pencil-square-o"> </span><span class="etiqueta d-md-none"> Registros</span></a>
+      </div>
+      <div class="nav-item dropright d-md-none d-lg-block">
+          <a class=" nav-link dropdown-toggle" href="#" id="dropright4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gears"> </span><span class="etiqueta d-md-none"> Opciones de menú</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropright4">
+              <a id="configMenu-H" class="dropdown-item" href="#"><span id="menuOpt-H">Horizontal</span></a>
+              <a id="configIcon-C" class="dropdown-item d-none" href="#"><span id="iconOpt-C">Compactar</span></a>
+              <a id="configIcon-E" class="dropdown-item " href="#"><span id="iconOpt-E">Expandir</span></a>
+          </div>
+      </div>
+  </nav>
+</div>
